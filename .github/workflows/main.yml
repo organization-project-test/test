@@ -13,6 +13,7 @@ jobs:
         uses: actions/setup-java@v2
         with:
           java-version: '11'
+          distribution: 'adopt'
       - name: Install Gradle
         run: |
           sudo add-apt-repository ppa:cwchien/gradle
