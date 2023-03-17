@@ -9,16 +9,7 @@ jobs:
     steps:
       - name: Checkout Code
         uses: actions/checkout@v1
-      - name: Set up JDK 11
-        uses: actions/setup-java@v2
-        with:
-          java-version: '11'
-          distribution: 'adopt'
-      - name: Install Gradle
-        run: |
-          sudo add-apt-repository ppa:cwchien/gradle 
-          sudo apt-get update
-          sudo apt-get install gradle
+
 
       - name: Publish Test Report
         uses: mikepenz/action-junit-report@v3
